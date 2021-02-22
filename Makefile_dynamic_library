@@ -20,4 +20,4 @@ fclean: clean
 re: fclean all
 
 run:
-        gcc $(SRCS) main.c -o test - -L. -g -Iincludes/
+        gcc $(SRCS) main.c -o test -lname -L. -g -Iincludes/
