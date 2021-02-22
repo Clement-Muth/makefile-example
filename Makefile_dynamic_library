@@ -1,0 +1,23 @@
+SRCS    =       ...
+
+CFLAGS  =       -W -Wall -Wextra -Werror
+
+LDFLAGS	=		-lname -L.
+
+NAME    =       libname.so
+
+all:    $(NAME)
+
+$(NAME):
+        gcc -fPIC $(SRCS) -shared -o $(NAME) $(CFLAGS) -Iincludes/
+
+clean:
+        rm -f $(OBJS)
+
+fclean: clean
+        rm -f $(NAME)
+
+re: fclean all
+
+run:
+        gcc $(SRCS) main.c -o test - -L. -g -Iincludes/
