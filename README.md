@@ -1,2 +1,2 @@
 # Makefile
-Some example of Makefile
+Some examples of Makefile
